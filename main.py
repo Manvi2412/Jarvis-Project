@@ -11,7 +11,7 @@ import os
 
 recognizer=sr.Recognizer()
 engine=pyttsx3.init()
-newsapi="54f91c6f4bb943d89c7687321cf0f792"
+newsapi=""
 
 def speak(text):
     tts = gTTS(text)
