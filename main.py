@@ -36,7 +36,7 @@ def speak_old(text):
 
 def aiprocess(command):
     client = OpenAI(
-  api_key="54f91c6f4bb943d89c7687321cf0f792",
+  api_key="",
 )
 
     completion = client.chat.completions.create(
@@ -63,7 +63,7 @@ def processCommand(c):
         link=musicLibrary.music[song]
         webbrowser.open(link)
     elif "news" in c.lower():
-        r=requests.get("https://newsapi.org/v2/top-headlines?country=in&apiKey=54f91c6f4bb943d89c7687321cf0f792")
+        r=requests.get("https://newsapi.org/v2/top-headlines?country=in&apiKey=.......")
         if r.status_code == 200:
             data = r.json()
             
