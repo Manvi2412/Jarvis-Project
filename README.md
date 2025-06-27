@@ -25,10 +25,4 @@ Jarvis is a voice-activated personal assistant built using Python. It can respon
 3. Matches the command and executes the appropriate function
 4. Gives verbal feedback using a text-to-speech engine
 
-## 📁 Project Structure
-
-- `main.py` – core script with command logic
-- `voice.py` – handles voice input/output
-- `api_handler.py` – (optional) news/GPT integration
-- `requirements.txt` – all dependencies
 
