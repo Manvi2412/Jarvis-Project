@@ -6,22 +6,22 @@
 
 ## Features
 
-- 🔊 **Speech Recognition & Wake Word Detection**  
+- **Speech Recognition & Wake Word Detection**  
   Listens for the keyword “Jarvis” and responds to voice commands.
 
-- 🤖 **Conversational AI with GPT-3.5**  
+- **Conversational AI with GPT-3.5**  
   Uses OpenAI's API to generate intelligent and contextual responses.
 
-- 🌐 **Web Automation**  
+- **Web Automation**  
   Opens frequently used websites like Google, YouTube, LinkedIn, and Facebook via voice.
 
-- 📰 **Real-Time News Updates**  
+- **Real-Time News Updates**  
   Fetches and reads current top headlines from NewsAPI.
 
-- 🎵 **Music Playback**  
+- **Music Playback**  
   Plays predefined YouTube links based on voice commands.
 
-- 🗣️ **Text-to-Speech Support**  
+- **Text-to-Speech Support**  
   Dual support with `pyttsx3` (offline) and `gTTS` + `pygame` (online).
 
 ## Technologies Used
