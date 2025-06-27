@@ -1,28 +1,89 @@
-# 🗣️ Jarvis – Voice-Controlled Virtual Assistant (Python)
+# Jarvis – A Python-Based Virtual Voice Assistant
 
-Jarvis is a voice-activated personal assistant built using Python. It can respond to voice commands, perform web-based tasks, and interact with APIs to provide useful, real-time information.
+## Overview
 
-## 🤖 Features
+**Jarvis** is a Python-based voice-controlled virtual assistant designed to perform various tasks such as answering questions, playing music, reading the news, and opening web pages. Leveraging OpenAI’s GPT-3.5 and various Python libraries, Jarvis demonstrates intelligent interaction through speech recognition and synthesis.
 
-- Voice-activated command recognition using `speech_recognition`
-- Converts text to speech responses using `pyttsx3` and `gTTS`
-- Performs tasks like:
-  - Opening websites (Google, YouTube, etc.)
-  - Fetching latest news headlines via NewsAPI
-  - Time and date updates
-  - Responding using OpenAI's GPT API (if enabled)
+## Features
 
-## 🛠️ Technologies Used
+- 🔊 **Speech Recognition & Wake Word Detection**  
+  Listens for the keyword “Jarvis” and responds to voice commands.
 
-- **Language**: Python  
-- **Libraries**: `speech_recognition`, `pyttsx3`, `gTTS`, `webbrowser`, `pygame`, `requests`, `datetime`  
-- **Environment**: VS Code / Jupyter Notebook
+- 🤖 **Conversational AI with GPT-3.5**  
+  Uses OpenAI's API to generate intelligent and contextual responses.
 
-## 🚀 How It Works
+- 🌐 **Web Automation**  
+  Opens frequently used websites like Google, YouTube, LinkedIn, and Facebook via voice.
 
-1. Listens for a wake word (“Jarvis”)
-2. Recognizes the voice input and converts it to text
-3. Matches the command and executes the appropriate function
-4. Gives verbal feedback using a text-to-speech engine
+- 📰 **Real-Time News Updates**  
+  Fetches and reads current top headlines from NewsAPI.
 
+- 🎵 **Music Playback**  
+  Plays predefined YouTube links based on voice commands.
+
+- 🗣️ **Text-to-Speech Support**  
+  Dual support with `pyttsx3` (offline) and `gTTS` + `pygame` (online).
+
+## Technologies Used
+
+- **Python 3.x**
+- `speech_recognition` – for voice input
+- `pyttsx3`, `gTTS`, `pygame` – for speech output
+- `webbrowser`, `requests` – for automation and API calls
+- `openai` – for GPT-3.5 integration
+- `NewsAPI` – for news retrieval
+
+## Key Files
+
+- `main.py`: Main voice assistant logic, command routing, and speech processing.
+- `musicLibrary.py`: Predefined dictionary of music titles and YouTube links.
+- `client.py`: Standalone sample to demonstrate OpenAI GPT integration.
+
+## Setup Instructions
+
+### 1. Clone the Repository
+git clone https://github.com/your-username/jarvis-voice-assistant.git
+cd jarvis-voice-assistant
+### 2. Set Up Virtual Environment (Recommended)
+python -m venv venv
+source venv/bin/activate   # On Windows: venv\Scripts\activate
+### 3. Install Dependencies
+pip install -r requirements.txt
+### 4. Run the Application
+python main.py
+Speak “Jarvis” to activate the assistant, followed by a command.
+
+
+
+### Example Commands
+"Jarvis, what is machine learning?"
+
+"Jarvis, open YouTube."
+
+"Jarvis, play skyfall."
+
+"Jarvis, read the news."
+
+### Sample Output
+Initializing Jarvis...
+Listening!
+Jarvis Active!
+You said: What is Python?
+Jarvis: Python is a high-level, interpreted programming language known for its simplicity and readability...
+
+### Known Limitations
+Limited noise tolerance in speech recognition.
+
+Music playback is hardcoded to predefined YouTube links.
+
+API keys are exposed in current implementation (requires refactoring for production).
+
+### Future Enhancements
+Integration with Google Calendar or reminders.
+
+Spotify API or dynamic music search.
+
+Personalized assistant profiles with persistent memory.
+
+GUI version of Jarvis.
 
